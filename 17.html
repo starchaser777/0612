@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a').click(function (event) {
+                alert('클릭은 되었지만 하이퍼링크 이벤트는 실행이 되지 않습니다.');
+                // 기본 이벤트를 막는 역할
+                event.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="https://naver.com">네이버 홈페이지</a>
+</body>
+</html>
